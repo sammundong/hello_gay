@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>게이야..</title>
-  <!-- 카카오 SDK 불러오기 -->
   <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
   <style>
     body {
@@ -19,16 +18,21 @@
       border-radius: 8px;
       cursor: pointer;
     }
+    img {
+      width: 200px;
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 <body>
 
-  <h1>📢 게이야 어서 들어오고~</h1>
+  <img src="images.jpg" alt="페페 와인짠짠">
+  
+  <h1>📢 이걸 속노 게이야~</h1>
   <p>친구에게 카카오톡 장난 메시지를 보내보세요</p>
   <button onclick="sendFoolMessage()">카카오톡으로 공유하기</button>
 
   <script>
-
     Kakao.init("b501f4725e1f02ccb566ae5f569752a3");
 
     function sendFoolMessage() {
